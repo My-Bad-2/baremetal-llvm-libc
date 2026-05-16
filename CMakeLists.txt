@@ -7,7 +7,7 @@ set_property(CACHE LIBC_ARCHITECTURE PROPERTY STRINGS x86_64 aarch64)
 set(LIBC_RELEASE_URL "https://github.com/My-Bad-2/baremetal-llvm-libc/releases/download/Libc/baremetal-libc.tar.xz" CACHE STRING "GitHub release asset URL (.tar.xz) containing libs/")
 set(LIBC_RELEASE_SHA256 "4b5dc549007d35cc613241fb027a8bdd1bd9379af1f822b88d58c5d9f871de7f" CACHE STRING "SHA256 of the GitHub release asset")
 set(LIBC_DOWNLOAD_DIR "${CMAKE_BINARY_DIR}/_deps/llvm-libc" CACHE PATH "Download/extract directory")
-set(LIBC_LIB_NAME "klibc" CACHE STRING "Base name of the static library (without lib prefix)")
+set(LIBC_LIB_NAME "c" CACHE STRING "Base name of the static library (without lib prefix)")
 set(LIBC_LIB_DIR_NAME "" CACHE STRING "Override libs/<dir> name from the release asset")
 
 if(LIBC_ARCHITECTURE STREQUAL "x86_64")
